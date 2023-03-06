@@ -1,6 +1,6 @@
 const PORT = 8080;
 const server = require("./index");
-const { db } = require("./db");
+const { db, User, Order, Personnel, Movie } = require("./db");
 
 const users = [
 	{
