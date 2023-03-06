@@ -1,10 +1,13 @@
 .nav-bar {
   height: 70px;
-  background: black;
+  background: rgb(47, 47, 47);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 4rem;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 .nav-bar a {
   text-decoration: none;
@@ -24,9 +27,9 @@
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  background: yellow;
+  background: blue;
   font-size: 14px;
   font-weight: 700;
-  color: black;
+  color: white;
   margin-left: 5px;
 }

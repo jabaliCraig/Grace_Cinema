@@ -15,14 +15,14 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: black;
+  background: rgb(47, 47, 47);
   color: #eee;
   border-color: #eee;
 }
 
 .pagination button.active {
   font-weight: 900;
-  border-color: #101010;
-  background: #f3a712;
-  color: #101010;
+  border-color: white;
+  background: blue;
+  color: white;
 }

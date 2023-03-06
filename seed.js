@@ -527,7 +527,7 @@ const movies = [
 		year: 2005,
 		description: "Three years into the Clone Wars, Obi-Wan pursues a new threat, while Anakin is lured by Chancellor Palpatine into a sinister plot to rule the galaxy.",
 		price: 12.99,
-		imageUrl: '.https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_.jpg',
+		imageUrl: 'https://m.media-amazon.com/images/M/MV5BNTc4MTc3NTQ5OF5BMl5BanBnXkFtZTcwOTg0NjI4NA@@._V1_FMjpg_UX1000_.jpg',
 		inventory: 73
 	},
 	{
@@ -630,12 +630,12 @@ const movies = [
 		inventory: 65
 	},
 	{
-		title: "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_.jpg",
+		title: "Harry Potter and the Hlaf-Blood Prince",
 		genre: 'Fantasy',
 		year: 2009,
 		description: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past.",
 		price: 16.99,
-		imageUrl: './assets/movieImg/hpHalfBloodPrince.jpg',
+		imageUrl: 'https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_.jp',
 		inventory: 23
 	},
 	{

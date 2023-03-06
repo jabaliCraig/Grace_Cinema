@@ -51,11 +51,11 @@ const Movies = () => {
                     </h2>
                   </Link>
                   <div>
-                    <button onClick={() => handleAddToCart(movie)}>
+                    <button className='user-add' onClick={() => handleAddToCart(movie)}>
                       Add To Cart
                     </button>
-										<button className='delete-button' onClick={() => deleteMovieById(movie.id)}>
-                      DELETE
+										<button className='admin-edit' onClick={() => deleteMovieById(movie.id)}>
+                      Edit Movie
                     </button>
                     </div>
                 </div>
