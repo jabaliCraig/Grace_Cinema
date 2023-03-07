@@ -9,7 +9,6 @@ import Users from "./Users";
 import Cart from "./Cart";
 import Orders from "./Orders";
 import SideNav from "./SideNav";
-import LogIn from "./LogIn";
 import NoPage from "./NoPage";
 
 // The Admin's profile who will have more control to the website than users

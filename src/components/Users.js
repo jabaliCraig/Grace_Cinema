@@ -9,7 +9,6 @@ import UserProfile from "./UserProfile";
 import Cart from "./Cart";
 import Orders from "./Orders";
 import SideNav from "./LeftSideNav";
-import LogIn from "./LogIn";
 import NoPage from "./NoPage";
 
 import { useSelector } from "react-redux";

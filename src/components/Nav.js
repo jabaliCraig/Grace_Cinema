@@ -8,7 +8,7 @@ const Nav = () => {
 
   return (
     <nav className="nav-bar">
-      <Link to="/login">Log In/Sign Up</Link>
+      <Link to="/signUp">Sign Up</Link>
       <Link to="/"><h1>Grace Cinema</h1></Link>
       <Link to="/cart">
         <div className="nav-bag">

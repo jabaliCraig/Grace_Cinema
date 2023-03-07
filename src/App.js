@@ -64,7 +64,6 @@ function App() {
 				<Route path='/orders' element={<Orders />} />
 				<Route path='/rightSidenav' element={<RightSideNav />} />
 				<Route path='/leftSidenav' element={<LeftSideNav />} />
-// 				<Route path='/login' element={<LogIn />} />
 				<Route path='/nopage' element={<NoPage />} />
 				<Route path='/update' element={<UpdateInfo />} />
 				<Route path='/actionadventure' element={<Action/>} />

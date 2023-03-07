@@ -10,7 +10,6 @@ import Users from "./Users";
 import Cart from "./Cart";
 import Orders from "./Orders";
 import SideNav from "./SideNav";
-import LogIn from "./LogIn";
 
 const noPage = () => {
 	return (
