@@ -44,7 +44,7 @@ const UsersProfile = (props) => {
 		{/* <h1>{user.fName} {user.lName}</h1>
 		<h2>{user.email}</h2> */}
 		<h3><LeftSideNav/></h3>
-		</div>))
+		</div>)
 };
 
 export default UsersProfile;
