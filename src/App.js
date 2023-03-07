@@ -8,7 +8,7 @@ import UserProfile from "./components/UserProfile";
 import Users from "./components/Users";
 import Cart from "./components/Cart";
 import Orders from "./components/Orders";
-import LogIn from "./components/LogIn";
+import LoginSignUp from "./components/LoginSignUp";
 import NoPage from "./components/NoPage";
 import UpdateInfo from './components/UpdateInfo';
 import AddMovie from './components/AddMovie';
@@ -64,7 +64,7 @@ function App() {
 				<Route path='/orders' element={<Orders />} />
 				<Route path='/rightSidenav' element={<RightSideNav />} />
 				<Route path='/leftSidenav' element={<LeftSideNav />} />
-				<Route path='/login' element={<LogIn />} />
+// 				<Route path='/login' element={<LogIn />} />
 				<Route path='/nopage' element={<NoPage />} />
 				<Route path='/update' element={<UpdateInfo />} />
 				<Route path='/actionadventure' element={<Action/>} />
