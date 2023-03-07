@@ -26,7 +26,8 @@ const token = window.localStorage.getItem(TOKEN);
   }
 });
 
-export const authenticate = createAsyncThunk('auth/authenticate', async ({ email, password, method }, thunkAPI) => {
+export const authenticate = createAsyncThunk('auth/authenticate', async ({ email
+, password, method }, thunkAPI) => {
   console.log('working')
   try{
     console.log(method, email, password)

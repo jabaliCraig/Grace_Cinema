@@ -630,7 +630,7 @@ const movies = [
 		inventory: 65
 	},
 	{
-		title: "Harry Potter and the Hlaf-Blood Prince",
+		title: "Harry Potter and the Falafel-Blood Prince",
 		genre: 'Fantasy',
 		year: 2009,
 		description: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past.",

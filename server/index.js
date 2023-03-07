@@ -3,9 +3,11 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const jwt = require("jsonwebtoken");
+const morgan = require('morgan')
 module.exports = app;
 
 app.use(cors());
+app.use(morgan('dev'))
 
 // Body parsing middleware
 app.use(express.json());
