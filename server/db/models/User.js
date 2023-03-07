@@ -35,9 +35,9 @@ const User = db.define('user', {
 
 const SALT_ROUNDS = 5;
 
-User.prototype.correctPassword = function(candidatePwd) {
+User.prototype.correctPassword = function(password) {
   //we need to compare the plain version to an encrypted version of the password
-  return bcrypt.compare(candidatePwd, this.password);
+  return bcrypt.compare(password, this.password);
 }
 
 User.prototype.generateToken = function() {
