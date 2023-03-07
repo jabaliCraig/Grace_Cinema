@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Nav from "./Nav";
 import Movies from "./Movies";
 import SingleMovie from "./SingleMovie";
@@ -22,23 +22,29 @@ import { fetchSpecificUserAsync, selectSpecificUser }  from "../features/specifi
 // 		type: 'customer'
 // }
 
-const UsersProfile = () => {
-	const dispatch = useDispatch()
-	const { id } = useParams()
-	// const [user, setUser] = useState(userDummy)
-	const user = useSelector(selectSpecificUser)
-
-	useEffect(() => {
-		dispatch(fetchSpecificUserAsync(id))
-	}, [dispatch])
+const UsersProfile = (props) => {
+		const user = useSelector((state) => state.auth.me.email);
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+  const logoutAndRedirectHome = () => {
+    dispatch(logout());
+    navigate('/login');
+  };
+// 	useEffect(() => {
+// 		dispatch(fetchSpecificUserAsync(id))
+// 	}, [dispatch])
 
 
   return (
 	<div>Welcome to your User Profile
-		<h1>{user.fName} {user.lName}</h1>
-		<h2>{user.email}</h2>
+		<h2>Welcome, {user}</h2>
+		<button type="button" onClick={logoutAndRedirectHome}>
+              Logout
+            </button>
+		{/* <h1>{user.fName} {user.lName}</h1>
+		<h2>{user.email}</h2> */}
 		<h3><LeftSideNav/></h3>
-		</div>)
+		</div>))
 };
 
 export default UsersProfile;
