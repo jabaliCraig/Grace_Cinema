@@ -26,6 +26,7 @@ import Horror from "./components/allGenres/Horror";
 import Romance from "./components/allGenres/Romance";
 import Science from "./components/allGenres/Science";
 import Western from "./components/allGenres/Western";
+import AuthLogin from "./components/AuthLogin";
 
 import { Route, Routes } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -50,6 +51,7 @@ function App() {
 
 			<Routes>
 				<Route path='/' element={<Movies />} />
+	<Route path="/signUp" element={<AuthLogin name={'sign up'} displayName="Sign Up"/>} />
 				<Route path='/movies' element={<Movies />} />
 				<Route path='/movies/:id' element={<SingleMovie />} />
 				<Route path='/movies/:id/edit' element={<EditMovie />} />
