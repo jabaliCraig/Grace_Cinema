@@ -12,10 +12,10 @@ export const fetchUsersAsync = createAsyncThunk("users", async () => {
   }
 });
 
-export const addUserAsync = createAsyncThunk("addUser", async (user) => {
-    const { data } = await axios.post(`/api/users`, user);
-    return data
-});
+// export const addUserAsync = createAsyncThunk("addUser", async (user) => {
+//     const { data } = await axios.post(`/api/users`, user);
+//     return data
+// });
 
 const usersSlice = createSlice({
   name: "users",
@@ -26,9 +26,9 @@ const usersSlice = createSlice({
       // Add user to the state array
       return action.payload;
     });
-    builder.addCase(addUserAsync.fulfilled, (state, action) => {
-      state.push(action.payload);
-    });
+    // builder.addCase(addUserAsync.fulfilled, (state, action) => {
+    //   state.push(action.payload);
+    // });
   },
 });
 

@@ -5,6 +5,7 @@ import ordersSlice from "../features/orders";
 import allPersonnelSlice from "../features/allPersonnelSlice";
 import specificUserSlice from "../features/specificUserSlice";
 import singleMovieSlice from "../features/singleMovieSlice";
+import singlePersonSlice from "../features/singlePersonSlice";
 import cartSlice from "../features/cartSlice";
 import authSlice from "../features/authSlice";
 
@@ -15,10 +16,11 @@ const store = configureStore({
     user: specificUserSlice,
 		movies: allMoviesSlice,
     singleMovie: singleMovieSlice,
+    singlePerson: singlePersonSlice,
     orders: ordersSlice,
     personnel: allPersonnelSlice,
     cart: cartSlice,
-	   auth: authSlice
+		auth: authSlice
   },
 });
 // First dispatch when the application loads

@@ -14,18 +14,18 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-// // GET /api/personnel/:id
-// router.get('/id', async (req, res, next) => {
-//     try {
-//         const person = await Personnel.findByPk(req.params.id, {
-//             include: Movie
-//         })
-//         res.send(person)
-//     }
-//     catch (error) {
-//         next(error)
-//     }
-// })
+// GET /api/personnel/:id
+router.get('/:id', async (req, res, next) => {
+    try {
+        const person = await Personnel.findByPk(req.params.id, {
+            include: [ Movie ]
+        })
+        res.send(person)
+    }
+    catch (error) {
+        next(error)
+    }
+})
 
 // // POST /api/personnel
 // router.post('/', async (req, res, next) => {

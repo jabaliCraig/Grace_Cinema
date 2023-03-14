@@ -8,7 +8,7 @@ import UserProfile from "./components/UserProfile";
 import Users from "./components/Users";
 import Cart from "./components/Cart";
 import Orders from "./components/Orders";
-import Signup from "./components/Signup";
+import LoginSignUp from "./components/LoginSignUp";
 import NoPage from "./components/NoPage";
 import UpdateInfo from './components/UpdateInfo';
 import AddMovie from './components/AddMovie';
@@ -51,13 +51,12 @@ function App() {
 
 			<Routes>
 				<Route path='/' element={<Movies />} />
-	<Route path="/login" element={<AuthLogin name={'login'} displayName="Login"/>} />
-	<Route path="/signup" element={<Signup/>} />
+				<Route path="/signUp" element={<AuthLogin name={'sign up'} displayName="Sign Up"/>} />
 				<Route path='/movies' element={<Movies />} />
 				<Route path='/movies/:id' element={<SingleMovie />} />
 				<Route path='/movies/:id/edit' element={<EditMovie />} />
 				<Route path='/movies/add' element={<AddMovie />} />
-				<Route path='/people/:id' element={<SinglePerson />} />
+				<Route path='/personnel/:id' element={<SinglePerson />} />
 				<Route path='/admin' element={<Admin />} />
 				<Route path='/users/:id' element={<UserProfile />} />
 				<Route path='/users' element={<Users />} />

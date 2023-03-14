@@ -1270,7 +1270,7 @@ const orders = [
 
 const seed = async () => {
   try {
-    await db.sync({force: true});
+    await db.sync();
 		await Promise.all(users.map(user => {
   		return User.create(user);
 		}));
