@@ -630,7 +630,7 @@ const movies = [
 		inventory: 65
 	},
 	{
-		title: "Harry Potter and the Falafel-Blood Prince",
+		title: "Harry Potter and the Hlaf-Blood Prince",
 		genre: 'Fantasy',
 		year: 2009,
 		description: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past.",
@@ -1284,18 +1284,109 @@ const seed = async () => {
 			return Order.create(order);
 		}));
 		//Craig, going off of: https://sequelize.org/docs/v6/advanced-association-concepts/advanced-many-to-many/
-		const Blanchett = await (Personnel.findOne({
+		const Galadriel = await (Personnel.findOne({
 			where: {
 				fName: 'Cate',
 				lName: 'Blanchett'
 			}
 		}))
-		const GOAT = await (Personnel.findOne({
+		const Frodo = await (Personnel.findOne({
 			where: {
 				fName: 'Elijah',
 				lName: 'Wood'
 			}
 		}))
+		const Gandalf = await (Personnel.findOne({
+			where: {
+				fName: 'Ian',
+				lName: 'McKellen'
+			}
+		}))
+		const Arwen = await (Personnel.findOne({
+			where: {
+				fName: 'Liv',
+				lName: 'Tyler'
+			}
+		}))
+		const Aragorn = await (Personnel.findOne({
+			where: {
+				fName: 'Viggo',
+				lName: 'Mortensen'
+			}
+		}))
+		const Samwise = await (Personnel.findOne({
+			where: {
+				fName: 'Sean',
+				lName: 'Astin'
+			}
+		}))
+		const Gimli = await (Personnel.findOne({
+			where: {
+				fName: 'John',
+				lName: 'Rhys-Davies'
+			}
+		}))
+		const Saruman = await (Personnel.findOne({
+			where: {
+				fName: 'Christopher',
+				lName: 'Lee'
+			}
+		}))
+		const Pippin = await (Personnel.findOne({
+			where: {
+				fName: 'Billy',
+				lName: 'Boyd'
+			}
+		}))
+		const Merry = await (Personnel.findOne({
+			where: {
+				fName: 'Dominic',
+				lName: 'Monaghan'
+			}
+		}))
+		const Legolas = await (Personnel.findOne({
+			where: {
+				fName: 'Orlando',
+				lName: 'Bloom'
+			}
+		}))
+		const Elrond = await (Personnel.findOne({
+			where: {
+				fName: 'Hugo',
+				lName: 'Weaving'
+			}
+		}))
+		const Boromir = await (Personnel.findOne({
+			where: {
+				fName: 'Sean',
+				lName: 'Bean'
+			}
+		}))
+		const Gollum = await (Personnel.findOne({
+			where: {
+				fName: 'Andy',
+				lName: 'Serkis'
+			}
+		}))
+		const Eomer = await (Personnel.findOne({
+			where: {
+				fName: 'Karl',
+				lName: 'Urban'
+			}
+		}))
+		const Bilbo = await (Personnel.findOne({
+			where: {
+				fName: 'Martin',
+				lName: 'Freeman'
+			}
+		}))
+		const Smaug = await (Personnel.findOne({
+			where: {
+				fName: 'Benedict',
+				lName: 'Cumberbatch'
+			}
+		}))
+
 		const FotR = await (Movie.findOne({
 			where: {
 				title: 'The Lord of the Rings: The Fellowship of the Ring',
@@ -1311,8 +1402,133 @@ const seed = async () => {
 				title: 'The Lord of the Rings: The Return of the King'
 			}
 		}))
-		await Blanchett.setMovies([FotR, tTT, tRotK]);
-		await GOAT.setMovies([FotR, tTT, tRotK]);
+		const tHaUJ = await (Movie.findOne({
+			where: {
+				title: 'The Hobbit: An Unexpected Journey',
+			}
+		}))
+		const tHtDoS = await (Movie.findOne({
+			where: {
+				title: 'The Hobbit: The Desolation of Smaug'
+			}
+		}))
+		const tHtBot5A = await (Movie.findOne({
+			where: {
+				title: 'The Hobbit: The Battle of the Five Armies'
+			}
+		}))
+		const M = await (Movie.findOne({
+			where: {
+				title: 'Mowgli: Legend of the Jungle'
+			}
+		}))
+		const AAoU = await (Movie.findOne({
+			where: {
+				title: 'Avengers: Age of Ultron'
+			}
+		}))
+		const BP = await (Movie.findOne({
+			where: {
+				title: 'Black Panther'
+			}
+		}))
+		const BPWF = await (Movie.findOne({
+			where: {
+				title: 'Black Panther: Wakanda Forever'
+			}
+		}))
+		const SWi = await (Movie.findOne({
+			where: {
+				title: 'Star Wars: Episode I - The Phantom Menace'
+			}
+		}))
+		const SWiii = await (Movie.findOne({
+			where: {
+				title: 'Star Wars: Episode III - Revenge of the Sith'
+			}
+		}))
+		const SWii = await (Movie.findOne({
+			where: {
+				title: 'Star Wars: Episode II - Attack of the Clones'
+			}
+		}))
+		const SWix = await (Movie.findOne({
+			where: {
+				title: 'Star Wars: Episode IX - The Rise of Skywalker'
+			}
+		}))
+		const SWviii = await (Movie.findOne({
+			where: {
+				title: 'Star Wars: Episode VIII - The Last Jedi'
+			}
+		}))
+		const SWvii = await (Movie.findOne({
+			where: {
+				title: 'Star Wars: Episode VII - The Force Awakens'
+			}
+		}))
+		const Rainbowrock = await (Movie.findOne({
+			where: {
+				title: 'Thor: Ragnarok'
+			}
+		}))
+		const CAtFA = await (Movie.findOne({
+			where: {
+				title: 'Captain America: The First Avenger'
+			}
+		}))
+		const CACW = await (Movie.findOne({
+			where: {
+				title: 'Captain America: Civil War'
+			}
+		}))
+		const tIH = await (Movie.findOne({
+			where: {
+				title: 'The Incredible Hulk'
+			}
+		}))
+		const DS = await (Movie.findOne({
+			where: {
+				title: 'Doctor Strange'
+			}
+		}))
+		const DSitMoM = await (Movie.findOne({
+			where: {
+				title: 'Doctor Strange in the Multiverse of Madness'
+			}
+		}))
+		const AM = await (Movie.findOne({
+			where: {
+				title: 'Ant-Man'
+			}
+		}))
+		const AMQ = await (Movie.findOne({
+			where: {
+				title: 'Ant-Man and the Wasp: Quantumania'
+			}
+		}))
+		const AMatW = await (Movie.findOne({
+			where: {
+				title: 'Ant-Man and the Wasp'
+			}
+		}))
+		await Smaug.setMovies([tHaUJ, tHtDoS, tHtBot5A, DS, DSitMoM]);
+		await Frodo.setMovies([FotR, tTT, tRotK, tHaUJ]);
+		await Gollum.setMovies([FotR, tTT, tRotK, tHaUJ, M, AAoU, BP, SWvii, SWviii, SWix]);
+		await Gimli.setMovies([FotR, tTT, tRotK]);
+		await Merry.setMovies([FotR, tTT, tRotK]);
+		await Pippin.setMovies([FotR, tTT, tRotK]);
+		await Samwise.setMovies([FotR, tTT, tRotK]);
+		await Aragorn.setMovies([FotR, tTT, tRotK]);
+		await Boromir.setMovies([FotR, tTT, tRotK]);
+		await Arwen.setMovies([FotR, tTT, tRotK, tIH]);
+		await Eomer.setMovies([tTT, tRotK, Rainbowrock]);
+		await Galadriel.setMovies([FotR, tTT, tRotK, tHaUJ, tHtDoS, tHtBot5A, Rainbowrock]);
+		await Gandalf.setMovies([FotR, tTT, tRotK, tHaUJ, tHtDoS, tHtBot5A]);
+		await Elrond.setMovies([FotR, tTT, tRotK, tHaUJ, tHtBot5A, CAtFA]);
+		await Saruman.setMovies([FotR, tTT, tRotK, tHaUJ, tHtBot5A, SWii, SWiii]);
+		await Legolas.setMovies([FotR, tTT, tRotK, tHtDoS, tHtBot5A]);
+		await Bilbo.setMovies([tHaUJ, tHtDoS, tHtBot5A, BP, BPWF, CACW]);
 		const user1 = await (User.findOne({
 			where: {
 				email: 'user1@customer.mail'
