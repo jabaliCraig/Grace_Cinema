@@ -1,22 +1,38 @@
-import React from "react";
-import Nav from "./Nav";
-import Movies from "./Movies";
-import SingleMovie from "./SingleMovie";
-import Personnel from "./Personnel";
-import Admin from "./Admin";
-import UserProfile from "./UserProfile";
-import Users from "./Users";
-import Cart from "./Cart";
-import Orders from "./Orders";
-import SideNav from "./SideNav";
-import NoPage from "./NoPage";
-
-// THIS WILL HOLD THE INFORMATION FOR THE INDIVIDUAL PEOPLE
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams, Link } from "react-router-dom";
+import { fetchSinglePersonAsync, selectSinglePerson } from "../features/singlePersonSlice";
 
 const SinglePerson = () => {
+	const dispatch = useDispatch()
+	const { id } = useParams()
+	const single = useSelector(selectSinglePerson);
+	
+	useEffect(() => {
+		dispatch(fetchSinglePersonAsync(id))
+	}, [dispatch])
+	
+
 	return (
-		<h1>Welcome to the Single Movies Component!</h1>
-		);
+		<div>
+			<img src={`${single.imageUrl}`}/>
+			<h1>{single.fName}{` `}{single.lName}</h1>
+			<p>Description: {single.details}</p>
+			<div>Filmography:
+				<ul>
+					{single.movies && single.movies.map((movie) => {
+						return (
+							<li>
+							<Link to={`/movies/${movie.id}`}>
+								{movie.title}
+							</Link>
+							</li>
+						)
+					})}
+					</ul>
+			</div>
+		</div>
+	);
 };
 
 export default SinglePerson;
